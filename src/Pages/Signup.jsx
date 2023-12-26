@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [signupDetails, setSignupDetails] = useState({
@@ -8,6 +8,7 @@ const Signup = () => {
     password: "",
   });
 
+  const navigate=useNavigate();
   const [error, setError] = useState("");
 
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
@@ -84,8 +85,8 @@ const Signup = () => {
     }
     const tokens = data.data.tokens;
     localStorage.setItem("tokens", JSON.stringify(tokens));
-    console.log(data);
-    console.log(localStorage.getItem("tokens"));
+    navigate('/')
+
   };
 
   return (
