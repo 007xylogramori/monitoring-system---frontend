@@ -273,7 +273,7 @@ const Login = () => {
             </form>
 
             <p className="mb-4 text-center">
-              New on futurism?
+              New on Web404Monitor?
               <Link
                 to="/signup"
                 className="cursor-pointer text-indigo-500 no-underline hover:text-indigo-500"
@@ -284,7 +284,7 @@ const Login = () => {
             </p>
           </div>
         </div>
-        {/* <!-- /Register --> */}
+      
       </div>
     </div>
   );
